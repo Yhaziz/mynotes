@@ -4,7 +4,7 @@ This project is a notes application developed using Angular, integrating a full-
 
 
 
-![website]([https://github.com/Yhaziz/isi-kef-website/assets/121454985/450a9e8f-ca65-4a2b-9972-c419fb684139](https://github.com/Yhaziz/mynotes/blob/504d1c43ba66db357bea2b30e43a4a980ba10af1/mynotes.png))
+![website](https://github.com/Yhaziz/mynotes/blob/c6fec7443b4a6ab53e02ed71c0643326b9f76f39/mynotes.png)
 
 ## Features
 
