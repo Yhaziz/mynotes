@@ -2,6 +2,10 @@
 
 This project is a notes application developed using Angular, integrating a full-mocks API for simulating backend interactions. Below is a detailed overview of the app and how to get started.
 
+
+
+![website]([https://github.com/Yhaziz/isi-kef-website/assets/121454985/450a9e8f-ca65-4a2b-9972-c419fb684139](https://github.com/Yhaziz/mynotes/blob/504d1c43ba66db357bea2b30e43a4a980ba10af1/mynotes.png))
+
 ## Features
 
 - **Lazy Loading:** Optimizes application loading time by loading feature modules on demand.
