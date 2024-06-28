@@ -28,6 +28,7 @@ This project is a notes application developed using Angular, integrating a full-
     - **spartan UI**
     - **TypeScript**
     - **Tailwind CSS**
+    - **FakeApi**
 
 ## Getting Started
 
