@@ -21,6 +21,13 @@ This project is a notes application developed using Angular, integrating a full-
   - **Form Validation:** Ensure user input is correctly formatted and validated.
   - **Routing:** Navigate between different sections of the app seamlessly.
   - **Reactive Programming:** Use RxJS to handle asynchronous data streams effectively.
+ 
+    ## Technologies Used
+
+    -**Angular
+    -**spartan UI
+    -**TypeScript
+    -**Tailwind CSS
 
 ## Getting Started
 
