@@ -1,0 +1,23 @@
+<div class="sm:w-[70%] justify-center mx-auto my-10 overflow-hidden rounded-2xl bg-white shadow-lg">
+    <div class="bg-gradient-to-b from-purple-500 to-purple-900 px-10 py-10 text-center text-white">
+      <p class="font-serif text-2xl font-semibold tracking-wider" >{{itemDetails.title}}</p>
+    </div>
+  
+    <div class="space-y-4 px-8 py-10">
+      <form [formGroup]="showPost">
+        <label class="block" for="title">
+          <p class="text-gray-600">Title</p>
+          <input class="w-full rounded-md border bg-white px-2 py-2 outline-none ring-purple-600 focus:ring-1" formControlName="title" type="text"  />
+        </label>
+        <label class="mt-6 block" for="sdesc">
+          <p class="text-gray-600">Short Description</p>
+          <input class="w-full rounded-md border bg-white px-2 py-2 outline-none ring-purple-600 focus:ring-1" formControlName="sdesc" type="text"    />
+        </label>
+        <label class="mt-6 block" for="desc">
+          <p class="text-gray-600">Description</p>
+          <textarea class="h-32 w-full rounded-md border bg-white px-2 py-2 outline-none ring-purple-600 focus:ring-1" formControlName="desc"  ></textarea>
+        </label>
+      </form>
+    </div>
+  </div>
+  

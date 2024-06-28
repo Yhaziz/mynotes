@@ -1,0 +1,148 @@
+{
+  "hash": "7df36e58",
+  "configHash": "341e5265",
+  "lockfileHash": "6b5c1338",
+  "browserHash": "8e3b0dec",
+  "optimized": {
+    "@angular/common": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "cd84411e",
+      "needsInterop": false
+    },
+    "@angular/common/http": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
+      "file": "@angular_common_http.js",
+      "fileHash": "59a9a942",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "91cb9bd4",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "98316b1e",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "6de6da00",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "7fc2833b",
+      "needsInterop": false
+    },
+    "@ng-icons/core": {
+      "src": "../../../../../node_modules/@ng-icons/core/fesm2022/ng-icons-core.mjs",
+      "file": "@ng-icons_core.js",
+      "fileHash": "93bb1f3d",
+      "needsInterop": false
+    },
+    "@ng-icons/lucide": {
+      "src": "../../../../../node_modules/@ng-icons/lucide/fesm2022/ng-icons-lucide.mjs",
+      "file": "@ng-icons_lucide.js",
+      "fileHash": "9de49006",
+      "needsInterop": false
+    },
+    "@spartan-ng/ui-alertdialog-brain": {
+      "src": "../../../../../node_modules/@spartan-ng/ui-alertdialog-brain/fesm2022/spartan-ng-ui-alertdialog-brain.mjs",
+      "file": "@spartan-ng_ui-alertdialog-brain.js",
+      "fileHash": "cd824c59",
+      "needsInterop": false
+    },
+    "@spartan-ng/ui-core": {
+      "src": "../../../../../node_modules/@spartan-ng/ui-core/fesm2022/spartan-ng-ui-core.mjs",
+      "file": "@spartan-ng_ui-core.js",
+      "fileHash": "fa749ac8",
+      "needsInterop": false
+    },
+    "@spartan-ng/ui-dialog-brain": {
+      "src": "../../../../../node_modules/@spartan-ng/ui-dialog-brain/fesm2022/spartan-ng-ui-dialog-brain.mjs",
+      "file": "@spartan-ng_ui-dialog-brain.js",
+      "fileHash": "bf4530a4",
+      "needsInterop": false
+    },
+    "@spartan-ng/ui-label-brain": {
+      "src": "../../../../../node_modules/@spartan-ng/ui-label-brain/fesm2022/spartan-ng-ui-label-brain.mjs",
+      "file": "@spartan-ng_ui-label-brain.js",
+      "fileHash": "d80b3e1b",
+      "needsInterop": false
+    },
+    "class-variance-authority": {
+      "src": "../../../../../node_modules/class-variance-authority/dist/index.mjs",
+      "file": "class-variance-authority.js",
+      "fileHash": "dce09e93",
+      "needsInterop": false
+    },
+    "ng-search-filter": {
+      "src": "../../../../../node_modules/ng-search-filter/fesm2015/ng-search-filter.js",
+      "file": "ng-search-filter.js",
+      "fileHash": "511fea16",
+      "needsInterop": false
+    },
+    "ngx-sonner": {
+      "src": "../../../../../node_modules/ngx-sonner/fesm2022/ngx-sonner.mjs",
+      "file": "ngx-sonner.js",
+      "fileHash": "8abba22f",
+      "needsInterop": false
+    },
+    "rxjs": {
+      "src": "../../../../../node_modules/rxjs/dist/esm5/index.js",
+      "file": "rxjs.js",
+      "fileHash": "d109e938",
+      "needsInterop": false
+    },
+    "rxjs/operators": {
+      "src": "../../../../../node_modules/rxjs/dist/esm5/operators/index.js",
+      "file": "rxjs_operators.js",
+      "fileHash": "61f50a21",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-ZHMX2CXZ": {
+      "file": "chunk-ZHMX2CXZ.js"
+    },
+    "chunk-PXYLYBKE": {
+      "file": "chunk-PXYLYBKE.js"
+    },
+    "chunk-LO6KJQ3R": {
+      "file": "chunk-LO6KJQ3R.js"
+    },
+    "chunk-467ZURTU": {
+      "file": "chunk-467ZURTU.js"
+    },
+    "chunk-RLQFD3N7": {
+      "file": "chunk-RLQFD3N7.js"
+    },
+    "chunk-NV5AUCJU": {
+      "file": "chunk-NV5AUCJU.js"
+    },
+    "chunk-TTCURWDP": {
+      "file": "chunk-TTCURWDP.js"
+    },
+    "chunk-VJ52UD7S": {
+      "file": "chunk-VJ52UD7S.js"
+    },
+    "chunk-MOY5LPCH": {
+      "file": "chunk-MOY5LPCH.js"
+    },
+    "chunk-MJQNUHK2": {
+      "file": "chunk-MJQNUHK2.js"
+    },
+    "chunk-SAI3DHVA": {
+      "file": "chunk-SAI3DHVA.js"
+    },
+    "chunk-J4B6MK7R": {
+      "file": "chunk-J4B6MK7R.js"
+    }
+  }
+}

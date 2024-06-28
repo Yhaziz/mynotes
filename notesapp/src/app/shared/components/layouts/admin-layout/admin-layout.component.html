@@ -1,0 +1,104 @@
+
+
+
+<div class="bg-slate-200 flex h-screen">
+  <aside class="fixed z-50 md:relative">
+    <!-- Sidebar -->
+    <input type="checkbox" class="peer hidden" id="sidebar-open" />
+    <label class="peer-checked:rounded-full peer-checked:p-2 peer-checked:right-6 peer-checked:bg-gradient-to-t from-purple-500 to-indigo-700 peer-checked:text-white absolute top-8 z-20 mx-4 cursor-pointer md:hidden" for="sidebar-open">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </label>
+    <nav aria-label="Sidebar Navigation" class="peer-checked:w-64 left-0 z-10 flex h-screen w-0 flex-col overflow-hidden bg-gradient-to-t from-purple-500 to-indigo-700 text-white transition-all md:h-screen md:w-64 lg:w-72">
+      <div class="bg-gradient-to-t from-purple-700 to-indigo-700 mt-5 py-4 pl-10 md:mt-10">
+        <span class="">
+          <span class="text-xl">My Notes</span>
+        </span>
+      </div>
+      <ul class="mt-8 space-y-3 md:mt-20">
+        <li class="relative">
+          <button [routerLink]="['/admin/overview']" class="focus:bg-purple-600 hover:bg-purple-600 flex w-full space-x-2 rounded-md px-10 py-4 tebg-gradient-to-t from-purple-500 to-indigo-700 focus:outline-none">
+            <span
+              ><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" /></svg></span
+            ><span class="">Overview</span>
+          </button>
+        </li>
+        <li class="relative">
+          <button [routerLink]="['/admin/posts']" class="focus:bg-purple-600 hover:bg-purple-600 flex w-full space-x-2 rounded-md px-10 py-4 font-semibold focus:outline-none">
+            <span
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                <path d="M18 15V9C18 6.17157 18 4.75736 17.1213 3.87868C16.2426 3 14.8284 3 12 3H8C5.17157 3 3.75736 3 2.87868 3.87868C2 4.75736 2 6.17157 2 9V15C2 17.8284 2 19.2426 2.87868 20.1213C3.75736 21 5.17157 21 8 21H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M6 8L14 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M6 12L14 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M6 16L10 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M18 8H19C20.4142 8 21.1213 8 21.5607 8.43934C22 8.87868 22 9.58579 22 11V19C22 20.1046 21.1046 21 20 21C18.8954 21 18 20.1046 18 19V8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg> </span
+            ><span class="">Posts</span>
+          </button>
+          <svg class="text-slate-200 absolute -right-1 -top-1/2 z-10 hidden h-32 w-8 md:block" xmlns="http://www.w3.org/2000/svg" viewBox="399.349 57.696 100.163 402.081" width="1em" height="4em">
+            <path fill="currentColor" d="M 499.289 57.696 C 499.289 171.989 399.349 196.304 399.349 257.333 C 399.349 322.485 499.512 354.485 499.512 458.767 C 499.512 483.155 499.289 57.696 499.289 57.696 Z" />
+          </svg>
+        </li>
+        <li class="relative">
+          <button [routerLink]="['/admin/setting']" class="focus:bg-purple-600 hover:bg-purple-600 flex w-full space-x-2 rounded-md px-10 py-4 tebg-gradient-to-t from-purple-500 to-indigo-700 focus:outline-none">
+            <span class="text-2xl"
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                <path d="M15.5 12C15.5 13.933 13.933 15.5 12 15.5C10.067 15.5 8.5 13.933 8.5 12C8.5 10.067 10.067 8.5 12 8.5C13.933 8.5 15.5 10.067 15.5 12Z" stroke="currentColor" stroke-width="1.5" />
+                <path d="M20.7906 9.15201C21.5969 10.5418 22 11.2366 22 12C22 12.7634 21.5969 13.4582 20.7906 14.848L18.8669 18.1638C18.0638 19.548 17.6623 20.2402 17.0019 20.6201C16.3416 21 15.5402 21 13.9373 21L10.0627 21C8.45982 21 7.6584 21 6.99807 20.6201C6.33774 20.2402 5.93619 19.548 5.13311 18.1638L3.20942 14.848C2.40314 13.4582 2 12.7634 2 12C2 11.2366 2.40314 10.5418 3.20942 9.152L5.13311 5.83621C5.93619 4.45196 6.33774 3.75984 6.99807 3.37992C7.6584 3 8.45982 3 10.0627 3L13.9373 3C15.5402 3 16.3416 3 17.0019 3.37992C17.6623 3.75984 18.0638 4.45197 18.8669 5.83622L20.7906 9.15201Z" stroke="currentColor" stroke-width="1.5" />
+            </svg></span
+            ><span class="">Settings</span>
+          </button>
+        </li>
+      </ul>
+
+      <div class="my-6 mt-auto ml-10 flex cursor-pointer">
+        <div>
+          <img class="h-12 w-12 rounded-full" src="https://media.licdn.com/dms/image/D4E03AQEsewTsU7fAZQ/profile-displayphoto-shrink_800_800/0/1687731010467?e=2147483647&v=beta&t=48-Gyc07_M3escxiUlRsBlGZ50mCWYbn41DrIPMnClg" />
+        </div>
+        <div class="ml-3">
+          <p class="font-medium">Driss Mali</p>
+          <p class="text-sm tebg-gradient-to-t from-purple-500 to-indigo-700">Admin</p>
+        </div>
+      </div>
+    </nav>
+  </aside>
+  <!-- /Sidebar -->
+
+  <div class="flex h-full w-full flex-col">
+    <!-- Navbar -->
+    <header class="relative flex flex-col items-center bg-white px-4 py-4 shadow sm:flex-row md:h-20">
+      <div class="flex w-full flex-col justify-between overflow-hidden transition-all sm:max-h-full sm:flex-row sm:items-center">
+        <div class="relative ml-10 flex items-center justify-between rounded-md sm:ml-auto">
+        <ul class="mx-auto mt-4 flex space-x-6 sm:mx-5 sm:mt-0">
+          <li class="">
+            <button [routerLink]="['/']" class="flex h-8 w-8 items-center justify-center rounded-xl border tebg-gradient-to-t from-purple-500 to-indigo-700 hover:text-black hover:shadow">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" color="#000000" fill="none">
+                    <path d="M14 3.09502C13.543 3.03241 13.0755 3 12.6 3C7.29807 3 3 7.02944 3 12C3 16.9706 7.29807 21 12.6 21C13.0755 21 13.543 20.9676 14 20.905" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M13.5 14.5C12.9943 14.0085 11 12.7002 11 12M13.5 9.5C12.9943 9.99153 11 11.2998 11 12M11 12L21 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </header>
+    <!-- /Navbar -->
+
+    <!-- Main -->
+    <div class="h-full overflow-auto pl-10">
+      <main id="dashboard-main" class=" overflow-auto px-4 py-10">
+        <!-- Put your content inside of the <main/> tag -->
+        <h1 class="text-2xl font-black ">Good Morning!</h1>
+            <router-outlet></router-outlet>
+      </main>
+    </div>
+    <!-- /Main -->
+  </div>
+</div>
+
+  
+  
+
+

@@ -1,0 +1,34 @@
+<ngx-sonner-toaster richColors></ngx-sonner-toaster>
+<div class="sm:w-[70%] justify-center mx-auto my-10 overflow-hidden rounded-2xl bg-white shadow-lg">
+  <div class="bg-gradient-to-b from-purple-500 to-purple-900 px-10 py-10 text-center text-white">
+    <p class="font-serif text-2xl font-semibold tracking-wider">Submit your post</p>
+    <p class="text-center text-purple-100">All Input is required</p>
+  </div>
+
+  <div class="space-y-4 px-8 py-10">
+    <form [formGroup]="addPost" (ngSubmit)="onSubmit()">
+      <label class="block" for="title">
+        <p class="text-gray-600">Title</p>
+        <input class="w-full rounded-md border bg-white px-2 py-2 outline-none ring-purple-600 focus:ring-1" formControlName="title" type="text" placeholder="Enter the title" [ngClass]="{ 'is-invalid' : submitted && f['title'].errors}" />
+        <div class="mt-2 invalid-feed" *ngIf="submitted && f['title'].errors" >
+          <div class="text-red-700" *ngIf="f['title'].errors['required']">Title is required</div>
+        </div>
+      </label>
+      <label class="mt-6 block" for="sdesc">
+        <p class="text-gray-600">Short Description</p>
+        <input class="w-full rounded-md border bg-white px-2 py-2 outline-none ring-purple-600 focus:ring-1" formControlName="sdesc" type="text" placeholder="Enter short description" [ngClass]="{ 'is-invalid' : submitted && f['sdesc'].errors}"  />
+        <div class="mt-2 invalid-feed" *ngIf="submitted && f['sdesc'].errors">
+          <div class="text-red-700" *ngIf="f['sdesc'].errors['required']">Short description is required</div>
+        </div>
+      </label>
+      <label class="mt-6 block" for="desc">
+        <p class="text-gray-600">Description</p>
+        <textarea class="h-32 w-full rounded-md border bg-white px-2 py-2 outline-none ring-purple-600 focus:ring-1" formControlName="desc" placeholder="Enter the description of post" [ngClass]="{ 'is-invalid' : submitted && f['desc'].errors}"></textarea>
+        <div class="mt-2 invalid-feed" *ngIf="submitted && f['desc'].errors">
+          <div class="text-red-700" *ngIf="f['desc'].errors['required']">Description is required</div>
+        </div>
+      </label>
+      <button class="mt-4 rounded-full bg-gradient-to-b from-purple-500 to-purple-900 px-10 py-2 font-semibold text-white" type="submit">Save</button>
+    </form>
+  </div>
+</div>

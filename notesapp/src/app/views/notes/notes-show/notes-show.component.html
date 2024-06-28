@@ -1,0 +1,25 @@
+<ngx-sonner-toaster richColors></ngx-sonner-toaster>
+
+<form  [formGroup]="addFourm" (submit)="onsubmit(itemId)"  >
+  
+    <div class="py-4 grid gap-4"  >
+      
+      <div class="items-center grid grid-cols-4 gap-4">
+        <label hlmLabel for="title" class="text-right">Titre</label>
+        <input hlmInput id="title" name="title" class="col-span-3" type="text" formControlName="title" />
+      </div>
+      <div class="items-center grid grid-cols-4 gap-4 mt-3">
+        <label hlmLabel for="desc" class="text-right">Description</label>
+        <input hlmInput id="desc" name="desc" class="col-span-3" type="text"  formControlName="desc" />
+      </div>
+    </div>
+    <hlm-dialog-footer>
+      <button hlmBtn type="submit" >{{ itemId ? 'Save changes' : 'Add' }}</button>
+    </hlm-dialog-footer>
+    </form>
+
+
+
+
+    
+

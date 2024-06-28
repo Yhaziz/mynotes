@@ -1,0 +1,55 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "title": "course angular",
+      "desc": "2 H angular everyday"
+    }
+  ],
+  "posts": [
+    {
+      "title": "Advancements in Natural Language Processing",
+      "sdesc": "Recent breakthroughs in NLP have revolutionized human-computer interaction.",
+      "desc": "Natural Language Processing (NLP) has seen significant advancements recently, particularly with transformer models like BERT and GPT. These models have improved language understanding and generation tasks, setting new benchmarks in various NLP challenges.",
+      "id": 1
+    },
+    {
+      "title": "html",
+      "sdesc": "what is html ",
+      "desc": "html",
+      "id": 2
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@notes.tn",
+      "password": "123456",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "email": "user@abharworks.com",
+      "password": "user",
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "role": "user"
+    },
+    {
+      "id": 4,
+      "email": "qsdsd@gmail.cc",
+      "password": "1234567",
+      "role": "user",
+      "name": "qdqsd"
+    },
+    {
+      "id": 5,
+      "email": "aazozo@gmail.com",
+      "password": "12345678",
+      "role": "user",
+      "name": "qsdqsd"
+    }
+  ]
+}

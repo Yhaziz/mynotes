@@ -1,0 +1,67 @@
+<ngx-sonner-toaster richColors  />
+<div class="flex min-h-screen w-screen w-full items-center justify-center text-gray-600 bg-gray-50">
+  <div class="relative">
+    <div class="hidden sm:block h-56 w-56 text-purple-500 absolute a-z-10 -left-20 -top-20">
+      <svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'>
+        <defs>
+          <pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(0.6) rotate(0)'>
+            <rect x='0' y='0' width='100%' height='100%' fill='none'/>
+            <path d='M11 6a5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5 5 5 0 015 5' stroke-width='1' stroke='none' fill='currentColor'/>
+          </pattern>
+        </defs>
+        <rect width='800%' height='800%' transform='translate(0,0)' fill='url(#a)'/>
+      </svg>
+    </div>
+
+    <div class="relative flex flex-col sm:w-[30rem] rounded-lg border-gray-400 bg-white shadow-lg px-4">
+      <div class="flex-auto p-6">
+        <div class="mb-10 flex flex-shrink-0 flex-grow-0 items-center justify-center overflow-hidden">
+          <a href="#" class="flex cursor-pointer items-center gap-2 text-purple-700 no-underline hover:text-purple-800">
+            <span class="flex-shrink-0 text-3xl font-black lowercase tracking-tight opacity-100">Login</span>
+          </a>
+        </div>
+        <h4 class="mb-2 font-medium text-gray-700 xl:text-xl">Welcome to My Notes</h4>
+        <p class="mb-6 text-gray-800">Please sign-in to access your account</p>
+
+        <form class="mb-4" [formGroup]="loginForm" (ngSubmit)="onsubmit()">
+          <div class="mb-4">
+            <label for="email" class="mb-2 inline-block text-xs font-medium uppercase text-gray-700">Email</label>
+            <input type="text" class="block w-full cursor-text appearance-none rounded-md border border-gray-400 bg--100 py-2 px-3 text-sm outline-none focus:border-purple-800 focus:bg-white focus:text-gray-600 focus:shadow" id="email" name="email" formControlName="email" [ngClass]="{ 'is-invalid' : submitted && f['email'].errors}" placeholder="Enter your email" autofocus/>
+            <div class="mt-2 invalid-feed" *ngIf="submitted && f['email'].errors">
+              <div class="text-red-700" *ngIf="f['email'].errors['required']">Email is required</div>
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="flex justify-between">
+              <label class="mb-2 inline-block text-xs font-medium uppercase text-gray-700" for="password">Password</label>
+            </div>
+            <div class="relative flex w-full flex-wrap items-stretch">
+              <input type="password" id="password" class="relative block flex-auto cursor-text appearance-none rounded-md border border-gray-400 bg--100 py-2 px-3 text-sm outline-none focus:border-purple-800 focus:bg-white focus:text-gray-600 focus:shadow" name="password" formControlName="password" [ngClass]="{ 'is-invalid' : submitted && f['password'].errors}" placeholder="············"/>
+            </div>
+            <div class="mt-2 invalid-feed" *ngIf="submitted && f['password'].errors">
+              <div class="text-red-700" *ngIf="f['password'].errors['required']">Password is required</div>
+              <div class="text-red-700" *ngIf="f['password'].errors?.['minlength']">Password must be at least 6 characters long.</div>
+            </div>
+          </div>
+          <div class="mb-4">
+            <button class="grid w-full cursor-pointer select-none rounded-md border border-purple-500 bg-purple-700 py-2 px-5 text-center align-middle text-sm text-white shadow hover:border-purple-600 hover:bg-purple-600 hover:text-white focus:border-purple-600 focus:bg-purple-600 focus:text-white focus:shadow-none" type="submit" (click)="setRole('user')">Login (user)</button>
+          </div>
+          <div class="mb-4">
+            <button class="grid w-full cursor-pointer select-none rounded-md border border-purple-500 bg-purple-700 py-2 px-5 text-center align-middle text-sm text-white shadow hover:border-purple-600 hover:bg-purple-600 hover:text-white focus:border-purple-600 focus:bg-purple-600 focus:text-white focus:shadow-none" type="submit" (click)="setRole('admin')">Login (admin)</button>
+          </div>
+        </form>
+
+        <p class="mb-4 text-center">
+          New on My Notes
+          <a [routerLink]="['/auth/register']" class="cursor-pointer text-purple-500 no-underline hover:text-purple-800"> Create an account </a>
+        </p>
+        <button [routerLink]="['/']" type="button" class="w-full flex items-center justify-center w-1/2 px-5 py-2 text-sm text-gray-700 transition-colors duration-200 bg-white border rounded-lg gap-x-2 sm:w-auto dark:hover:bg-gray-800 dark:bg-gray-900 hover:bg-gray-100 dark:text-gray-200 dark:border-gray-700">
+          <svg class="w-5 h-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"/>
+          </svg>
+          <span>Back To Home</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
