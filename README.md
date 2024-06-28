@@ -24,7 +24,7 @@ This project is a notes application developed using Angular, integrating a full-
  
     ## Technologies Used
 
-    -**Angular
+    -**Angular**
     - **spartan UI**
     - **TypeScript**
     - **Tailwind CSS**
